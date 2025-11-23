@@ -1,6 +1,6 @@
-# API para Detectar Fraudes️
+# Modelo de Machine Learning para Detectar Fraudes
 
-Solução de Machine Learning para detectar fraudes em cartões. O sistema funciona tanto para predições em tempo real quanto processamento de grandes volumes.
+Solução de Machine Learning para detectar fraudes em cartões de crédito. O sistema funciona tanto para predições em tempo real quanto processamento de grandes volumes.
 
 ## ️Tecnologias utilizadas
 
@@ -45,7 +45,7 @@ A API está documentada em: `https://localhost:8000/docs`
 ### Testar a API pelo Swagger:
 
 1. Acesse `http://localhost:8000/docs`.
-2. 
+ 
 2. Selecione ``POST /predict``.
 
 3. Clique em "Try it out".
@@ -77,7 +77,7 @@ python -m src.batch data/creditcard.csv predicoes_batch.csv
 
 As predições serão salvas em `predicoes_batch.csv`.
 
-### Testes Automatizados
+### 5. Testes Automatizados
 
 Para rodar os testes, execute:
 
@@ -85,9 +85,7 @@ Para rodar os testes, execute:
 pytest
 ```
 
----
-
-### 5. Docker
+### 6. Docker
 
 Para construir e rodar o container Docker, execute:
 
@@ -96,6 +94,7 @@ docker build -t mlproject .
 
 docker run -p 8080:8080 mlproject
 ```
+
 
 
 

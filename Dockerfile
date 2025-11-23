@@ -10,6 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src/ ./src/
 
+RUN mkdir -p artifacts
+
 RUN python -m src.training
 
 RUN useradd -m appuser && chown -R appuser /app

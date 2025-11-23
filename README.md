@@ -82,7 +82,7 @@ As predições serão salvas em `predicoes_batch.csv`.
 Para rodar os testes, execute:
 
 ```bash
-pytest
+pytest -v
 ```
 
 ### 6. Docker
